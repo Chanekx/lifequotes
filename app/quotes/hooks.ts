@@ -16,7 +16,6 @@ export const useHooks = () => {
   };
 
   const handleClick = async () => {
-    console.log(process.env.NEXT_PUBLIC_API_QUOTE_URL);
     setIsLoading(true);
     await fetchQuotes();
     setTimeout(() => setIsLoading(false), 500);
